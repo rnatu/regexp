@@ -8,10 +8,12 @@ const { texto } = require('./base');
 
 const regExp1 = /(maria|joão|luiz)(, hoje sua esposa)/gi; 
 
-//% test
+// % a partir da expressão regular
+
+//% test - expressãoRegular.test(string)
 // console.log(regExp1.test(texto))
 
-//% exec
+//% exec - expressãoRegular.test(string)
 // console.log(regExp1.exec(texto))
 // console.log(regExp1.exec(texto)[0])
 // console.log(regExp1.exec(texto).index)
