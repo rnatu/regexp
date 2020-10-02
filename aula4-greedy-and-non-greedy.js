@@ -2,9 +2,9 @@
 const {html} = require('./base')
 console.log(html);
 
-const regex = /<.+>.+<\/.+>/g //greedy
+const regexp = /<.+>.+<\/.+>/g //greedy
 
-const regex2 = /<.+?>.+?<\/.+?>/g //non-greedy
+const regexp2 = /<.+?>.+?<\/.+?>/g //non-greedy
 
 
-console.log(html.match(regex2))
+console.log(html.match(regexp2))

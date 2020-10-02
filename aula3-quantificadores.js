@@ -8,13 +8,13 @@ const {texto, arquivos} = require('./base')
 // console.log(texto);
 
 // +
-// const regex = /Jo+ão/gi
-// console.log(texto.match(regex))
+// const regexp = /Jo+ão/gi
+// console.log(texto.match(regexp))
 
 
-const regex2 = /\.(jp|JP)(e|E)?(g|G)|\.png/g
+const regexp2 = /\.(jp|JP)(e|E)?(g|G)|\.png/g
 for (const arquivo of arquivos) {
-    const valid = arquivo.match(regex2)
+    const valid = arquivo.match(regexp2)
 
     // if(!valid) continue;
 

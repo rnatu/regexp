@@ -6,19 +6,19 @@
 
 const { texto } = require('./base');
 
-const regExp1 = /(maria|joão|luiz)(, hoje sua esposa)/gi; 
+const regexp1 = /(maria|joão|luiz)(, hoje sua esposa)/gi; 
 
 // % a partir da expressão regular
 
 //% test - expressãoRegular.test(string)
-// console.log(regExp1.test(texto))
+// console.log(regexp1.test(texto))
 
 //% exec - expressãoRegular.test(string)
-// console.log(regExp1.exec(texto))
-// console.log(regExp1.exec(texto)[0])
-// console.log(regExp1.exec(texto).index)
+// console.log(regexp1.exec(texto))
+// console.log(regexp1.exec(texto)[0])
+// console.log(regexp1.exec(texto).index)
 
-const found = regExp1.exec(texto);
+const found = regexp1.exec(texto);
 if(found) {
 console.log(found[0]);
 console.log(found[1]);
